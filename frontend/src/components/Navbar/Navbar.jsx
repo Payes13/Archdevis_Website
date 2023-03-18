@@ -6,9 +6,11 @@ import { images } from '../../constants';
 import './Navbar.scss';
 
 const Navbar = () => {
+
   const [toggle, setToggle] = useState(false);
 
   return (
+
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <img src={images.logo} alt="logo" />
@@ -24,7 +26,7 @@ const Navbar = () => {
       </ul>
 
       {/* THIS WILL BE DISPLAYED ON MOBILE DEVICES */}
-      {/* THIS IS THE BLUE CIRCLE */}
+      {/* THIS IS THE HAMBURGER MENU */}
       <div className="app__navbar-menu">
         {/* SET IT TO TRUE SO WE CAN OPEN THE MENU */}
         {/* ESTAS SON LAS LINEAS BLANCAS DENTRO DEL CIRCULO AZUL */}

@@ -8,18 +8,20 @@ import { images } from '../../constants'
 import './Testimonial.scss';
 
 const testimonials = [
-  {name: 'Sarah', company: 'Netflix', feedback: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum corporis ab voluptates odio voluptatibus ipsam illo harum amet esse, nihil incidunt ratione perferendis magni aliquam, perspiciatis ipsa, quibusdam eveniet veniam.', imgurl: images.css},
-  {name: 'Micael', company: 'Google', feedback: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum corporis ab voluptates odio voluptatibus ipsam illo harum amet esse, nihil incidunt ratione perferendis magni aliquam, perspiciatis ipsa, quibusdam eveniet veniam.', imgurl: images.html},
+  {name: 'Alexander', company: 'Microsoft', feedback: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum corporis ab voluptates odio voluptatibus ipsam illo harum amet esse, nihil incidunt ratione perferendis magni aliquam, perspiciatis ipsa, quibusdam eveniet veniam.', imgurl: images.javascript},
+  {name: 'Sarah', company: 'Google', feedback: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum corporis ab voluptates odio voluptatibus ipsam illo harum amet esse, nihil incidunt ratione perferendis magni aliquam, perspiciatis ipsa, quibusdam eveniet veniam.', imgurl: images.html},
+  {name: 'Micael', company: 'Amazon Web Services', feedback: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum corporis ab voluptates odio voluptatibus ipsam illo harum amet esse, nihil incidunt ratione perferendis magni aliquam, perspiciatis ipsa, quibusdam eveniet veniam.', imgurl: images.css},
 ]
 
 const brands = [
   {name: 'New Balance', imgUrl: images.nb},
   {name: 'Skype', imgUrl: images.skype},
   {name: 'Spotify', imgUrl: images.spotify},
-  {name: 'Bolt', imgUrl: images.bolt},
+  {name: 'Amazon', imgUrl: images.amazon},
 ]
 
 const Testimonial = () => {
+
   const [currentIndex, setCurrentIndex] = useState(0);
   // const [testimonials, setTestimonials] = useState([]);
   // const [brands, setBrands] = useState([]);
@@ -29,6 +31,7 @@ const Testimonial = () => {
   };
 
   return (
+    
     <>
       {testimonials.length && (
         <>

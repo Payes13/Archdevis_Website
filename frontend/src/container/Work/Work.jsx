@@ -7,16 +7,17 @@ import { images } from '../../constants'
 
 import './Work.scss';
 
-const filterWork = [
+const works = [
   { title: 'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about03, name: 'Web development', tags: 'Web App'},
   { title: 'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about04, name: 'Web development', tags: 'React JS'},
   { title: 'Cool Mobile App', description: 'Tinder Clone in React Native', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about02, name: 'Web development', tags: 'Mobile App'},
+  { title: 'Cool Mobile App', description: 'Tinder Clone in React Native', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about02, name: 'Web development', tags: 'UI/UX'},
 ];
 
 const Work = () => {
 
-  const [works, setWorks] = useState([]);
-  // const [filterWork, setFilterWork] = useState([]);
+  // const [works, setWorks] = useState([]);
+  const [filterWork, setFilterWork] = useState(works);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
@@ -30,12 +31,13 @@ const Work = () => {
       if (item === 'All') {
         setFilterWork(works);
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        setFilterWork(works.filter((work) => work.tags.includes(item)));        
       }
     }, 500);
   };
 
   return (
+    
     <>
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 

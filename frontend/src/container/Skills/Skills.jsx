@@ -1,43 +1,52 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import ReactTooltip from 'react-tooltip';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import ReactTooltip from "react-tooltip";
 
-import { AppWrap, MotionWrap } from '../../wrapper';
-import { images } from '../../constants'
+import { AppWrap, MotionWrap } from "../../wrapper";
+import { images } from "../../constants";
 
-import './Skills.scss';
+import "./Skills.scss";
 
 const skills = [
-  { name: 'React JS', bgColor: '#edf2f8', icon: images.react },
-  { name: 'Figma', bgColor: '#edf2f8', icon: images.figma },
-  { name: 'Flutter', bgColor: '#edf2f8', icon: images.flutter },
-  { name: 'Git', bgColor: '#edf2f8', icon: images.git },
-  { name: 'Node JS', bgColor: '#edf2f8', icon: images.node },
+  { name: "React JS", bgColor: "#edf2f8", icon: images.react },
+  { name: "Figma", bgColor: "#edf2f8", icon: images.figma },
+  { name: "Flutter", bgColor: "#edf2f8", icon: images.flutter },
+  { name: "Git", bgColor: "#edf2f8", icon: images.git },
+  { name: "Node JS", bgColor: "#edf2f8", icon: images.node },
 ];
 
 const experiences = [
-  { year: '2020', works: [{
-      name: 'Frontend Developer', 
-      company: 'Google', 
-      description: 'I worked as a frontend developer at Google'
-    },
-    {
-      name: 'Blockchain Developer', 
-      company: 'Facebook', 
-      description: 'I developed in Solidity'
-    }
-  ]
+  {
+    year: "2020",
+    works: [
+      {
+        name: "Frontend Developer",
+        company: "Google",
+        description: "I worked as a frontend developer at Google",
+      },
+      {
+        name: "Blockchain Developer",
+        company: "Facebook",
+        description: "I developed in Solidity",
+      },
+    ],
   },
-  { year: '2021', works: [{
-      name: 'Backend Developer', 
-      company: 'Meta', 
-      description: 'I worked with Node.js and VR '
-    }]
+  {
+    year: "2021",
+    works: [
+      {
+        name: "Backend Developer",
+        company: "Meta",
+        description: "I worked with Node.js and VR ",
+      },
+    ],
   },
 ];
 
 const Skills = () => {
+
   return (
+    
     <>
       <h2 className="head-text">Skills & Experiences</h2>
 
@@ -49,29 +58,25 @@ const Skills = () => {
               transition={{ duration: 0.5 }}
               className="app__skills-item app__flex"
               key={skill.name}
-            > 
+            >
               <div
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
                 <img src={skill.icon} alt={skill.name} />
               </div>
-              
+
               <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
-
         </motion.div>
 
         <div className="app__skills-exp">
           {experiences.map((experience) => (
-            <motion.div
-              className="app__skills-exp-item"
-              key={experience.year}
-            >
+            <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
-              </div>    
+              </div>
 
               <motion.div className="app__skills-exp-works">
                 {experience.works.map((work) => (
@@ -87,6 +92,7 @@ const Skills = () => {
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
+                    
                     <ReactTooltip
                       id={work.name}
                       effect="solid"
@@ -98,19 +104,17 @@ const Skills = () => {
                   </>
                 ))}
               </motion.div>
-              
             </motion.div>
           ))}
-
         </div>
 
       </div>
     </>
-  )
-}
+  );
+};
 
 export default AppWrap(
-  MotionWrap(Skills, 'app__skills'),
-  'skills',
-  'app__whitebg'
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
 );

@@ -1,8 +1,10 @@
 import React from 'react';
+
 import { NavigationDots, SocialMedia } from '../components';
 
 // THIS FUNCTION IS GOING TO RETURN ANOTHER FUNCTION CALLED HOC()
 const AppWrap = (Component, idName, classNames) => function HOC() {
+
   return (
     <div id={idName} className={`app__container ${classNames}`}>
       <SocialMedia />
@@ -11,7 +13,7 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
         <Component />
 
         <div className="copyright">
-          <p className="p-text">@2022 MICHAEL</p>
+          <p className="p-text">@2023 ALEXANDER</p>
           <p className="p-text">All rights reserved</p>
         </div>
       </div>

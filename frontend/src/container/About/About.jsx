@@ -6,33 +6,34 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { images } from '../../constants'
 import './About.scss';
 
-const abouts = [
+const about = [
   { title: 'Web development', description: "I am a good web developer", imgUrl: images.about01},
-  { title: 'Frontend developer', description: "I am a good web developer", imgUrl: images.about02},
-  { title: 'Backend developer', description: "I am a good web developer", imgUrl: images.about03},
-  { title: 'PERN stack', description: "I am a good web developer", imgUrl: images.about04}
+  { title: 'Full stack developer', description: "I am a good full stack developer", imgUrl: images.about02},
+  { title: 'MERN stack', description: "I am a good MERN stack developer", imgUrl: images.about03},
+  { title: 'SAP CPI Developer', description: "I am a good SAP CPI developer", imgUrl: images.about04}
 ];
 
 const About = () => {
-  // const [abouts, setAbouts] = useState([]);
+  // const [about, setAbout] = useState([]);
 
   // useEffect(() => {
-  //   const query = '*[_type == "abouts"]';
+  //   const query = '*[_type == "about"]';
 
   //   client.fetch(query).then((data) => {
-  //     setAbouts(data);
+  //     setAbout(data);
   //   });
   // }, []);
 
   return (
+
     <>
       <h2 className="head-text">I Know that <span>Good Development</span> <br />means  <span>Good Business</span></h2>
 
       <div className="app__profiles">
-        {abouts.map((about, index) => (
+        {about.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.5, type: 'tween' }}
             className="app__profile-item"
             key={about.title + index}
@@ -49,10 +50,6 @@ const About = () => {
 }
 
 // about IS THE id
-// BEFORE EXPORTING THE About COMPONENT WE ARE GOING TO CALL THE AppWrapp HOC
-// EL COMPONENTE QUE LE PASSO A AppWrap ES MotionWrap
-export default AppWrap(
-  MotionWrap(About, 'app__about'),
-  'about',
-  'app__whitebg'
-);
+// BEFORE EXPORTING THE About COMPONENT WE ARE GOING TO CALL THE AppWrap HOC
+// EL COMPONENTE QUE LE PASO A AppWrap ES MotionWrap
+export default AppWrap(MotionWrap(About, 'app__about'), 'about', 'app__whitebg');

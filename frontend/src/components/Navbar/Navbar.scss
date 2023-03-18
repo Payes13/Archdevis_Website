@@ -66,7 +66,7 @@
         text-transform: uppercase;
         font-weight: 500;
   
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
   
         &:hover {
           color: var(--secondary-color);
@@ -87,6 +87,7 @@
   }
   
 //   THIS IS THE BLUE CIRCLE
+
   .app__navbar-menu {
     width: 35px;
     height: 35px;
@@ -131,7 +132,7 @@
       /* left side box shadow */
       box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
   
-    //   ESTA ES LA X DEL MENU
+    //   ESTA ES LA X (HiX) DEL MENU
       svg {
         width: 35px;
         height: 35px;
@@ -161,7 +162,7 @@
             text-transform: uppercase;
             font-weight: 500;
   
-            transition: all 0.3s ease-in-out;
+            transition: all 0.2s ease-in-out;
   
             &:hover {
               color: var(--secondary-color);

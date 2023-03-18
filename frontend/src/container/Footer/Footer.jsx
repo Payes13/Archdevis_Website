@@ -6,6 +6,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './Footer.scss';
 
 const Footer = () => {
+
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -36,6 +37,7 @@ const Footer = () => {
   };
 
   return (
+
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
 
@@ -71,7 +73,7 @@ const Footer = () => {
           
           <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>
-       : 
+      : 
         <div>
           <h3 className="head-text">
             Thank you for getting in touch!

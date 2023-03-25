@@ -35,6 +35,9 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import archLogo from '../assets/ArchLogo.png';
+import archLogo2 from '../assets/ArchLogo2.png';
+
 export default {
   email,
   mobile,
@@ -69,4 +72,6 @@ export default {
   nb,
   skype,
   spotify,
+  archLogo,
+  archLogo2,
 };

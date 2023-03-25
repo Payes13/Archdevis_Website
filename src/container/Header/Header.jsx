@@ -28,30 +28,27 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            <span>👋</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Alexander</h1>
+              <h1 className="head-text">Archdevis</h1>
+              <p className="p-text">is a services-led, software-enabled, IT & Cloud Solutions provider, focused on delivering industry-leading solutions.</p>
             </div>
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer MERN stack</p>
-            <p className="p-text">SAP Cloud Platform Integration Developer</p>
+            <p className="p-text">We develop websites and more</p>
+            <p className="p-text">for you and your business</p>
           </div>
         </div>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
 
-        {/* IMAGEN DE MICAEL */}
         <img src={images.profile} alt="profile_bg" />
 
-        {/* CIRCLE IMAGE BEHIND MICAEL */}
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
@@ -59,18 +56,14 @@ const Header = () => {
           alt="profile_circle"
           className="overlay_circle"
         />
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="profile_bg" />
-          </div>
-        ))}
+        <img src={images.archHeader} alt="profile_bg" />
       </motion.div>
 
     </div>

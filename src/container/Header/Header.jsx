@@ -36,7 +36,7 @@ const Header = () => {
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer</p>
+            <p className="p-text">Web Developer MERN stack</p>
             <p className="p-text">SAP Cloud Platform Integration Developer</p>
           </div>
         </div>

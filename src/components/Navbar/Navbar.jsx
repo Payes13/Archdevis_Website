@@ -13,7 +13,7 @@ const Navbar = () => {
 
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <img src={images.logo} alt="company logo" />
       </div>
 
       <ul className="app__navbar-links">
@@ -28,11 +28,9 @@ const Navbar = () => {
       {/* THIS WILL BE DISPLAYED ON MOBILE DEVICES */}
       {/* THIS IS THE HAMBURGER MENU */}
       <div className="app__navbar-menu">
-        {/* SET IT TO TRUE SO WE CAN OPEN THE MENU */}
         {/* ESTAS SON LAS LINEAS BLANCAS DENTRO DEL CIRCULO AZUL */}
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
-        {/* IF toggle IS true */}
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}

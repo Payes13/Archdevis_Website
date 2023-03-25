@@ -1,3 +1,6 @@
+// $blue_light: #27B1E6;
+// $blue_light_rgba: rgba(39, 177, 230, 0.50);
+
 .app__navbar {
     width: 100%;
   
@@ -7,16 +10,11 @@
   
     padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.25);
-    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur(4px);                 /* THIS */
+    backdrop-filter: blur(4px);   
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
-
-    // ESTO HACE LO MISMO QUE position: fixed;
-    // position: sticky;
-    // top: 0;
   }
   
   .app__navbar-logo {
@@ -86,14 +84,14 @@
     }
   }
   
-//   THIS IS THE BLUE CIRCLE
-
+//   THIS IS THE BLUE CIRCLE WHEN ON MOBILE
   .app__navbar-menu {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     position: relative;
-  
+    cursor: pointer;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +168,7 @@
           }
         }
       }
-     
+
     //   APPLIED TO <motion.div>
       @media screen and (min-width: 900px) {
         display: none;

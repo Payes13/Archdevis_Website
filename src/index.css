@@ -12,11 +12,17 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+
+  --primary-color-hex: #27B1E6;
+  --primary-color-rgba: rgba(39, 177, 230, 0.50);
+  --font-color-primary: #707070;
+  --font-color-secondary: #E5F3FB;
+
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }

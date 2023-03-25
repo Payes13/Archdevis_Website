@@ -21,19 +21,19 @@ const Footer = () => {
   const handleSubmit = () => {
     setLoading(true);
 
-    const contact = {
-      _type: 'contact',
-      name: formData.username,
-      email: formData.email,
-      message: formData.message,
-    };
+    // const contact = {
+    //   _type: 'contact',
+    //   name: formData.username,
+    //   email: formData.email,
+    //   message: formData.message,
+    // };
 
-    client.create(contact)
-      .then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true);
-      })
-      .catch((err) => console.log(err));
+    // client.create(contact)
+    //   .then(() => {
+    //     setLoading(false);
+    //     setIsFormSubmitted(true);
+    //   })
+    //   .catch((err) => console.log(err));
   };
 
   return (

@@ -3,6 +3,7 @@ import React from 'react';
 import { NavigationDots, SocialMedia } from '../components';
 
 // THIS FUNCTION IS GOING TO RETURN ANOTHER FUNCTION CALLED HOC()
+// AND THIS IS HOW WE CONVERT A function TO A HOC
 const AppWrap = (Component, idName, classNames) => function HOC() {
 
   return (

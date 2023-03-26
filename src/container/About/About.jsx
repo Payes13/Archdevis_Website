@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -27,7 +27,7 @@ const About = () => {
   return (
 
     <>
-      <h2 className="head-text">I Know that <span>Good Development</span> <br />means  <span>Good Business</span></h2>
+      <h2 className="head-text">We Know that <span>Good Development</span> <br />means  <span>Good Business</span></h2>
 
       <div className="app__profiles">
         {about.map((about, index) => (

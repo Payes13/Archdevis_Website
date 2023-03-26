@@ -38,6 +38,12 @@ import spotify from '../assets/spotify.png';
 import archLogo from '../assets/ArchLogo.png';
 import archLogo2 from '../assets/ArchLogo2.png';
 import archHeader from '../assets/ArchHeader.png';
+import archDesign from '../assets/ArchDesign.png';
+import archDesktop from '../assets/ArchDesktop.png';
+import archMarketing from '../assets/ArchMarketing.png';
+import archMobile from '../assets/ArchMobile.png';
+import archSolution from '../assets/ArchSolution.png';
+import archWeb from '../assets/ArchWeb.png';
 
 export default {
   email,
@@ -76,4 +82,10 @@ export default {
   archLogo,
   archLogo2,
   archHeader,
+  archDesign,
+  archDesktop,
+  archMarketing,
+  archMobile,
+  archSolution,
+  archWeb,
 };

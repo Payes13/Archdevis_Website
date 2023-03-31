@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
@@ -8,10 +8,10 @@ import { images } from '../../constants'
 import './Work.scss';
 
 const works = [
-  { title: 'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about03, name: 'Web development', tags: 'Web App'},
+  { title: 'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', projectLink: "http://www.bakatattoo.com", codeLink: 'http://www.google.com', imgUrl: images.archWork, name: 'Web development', tags: ['Websites']},
   { title: 'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about04, name: 'Web development', tags: 'React JS'},
   { title: 'Cool Mobile App', description: 'Tinder Clone in React Native', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about02, name: 'Web development', tags: 'Mobile App'},
-  { title: 'Cool Mobile App', description: 'Tinder Clone in React Native', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about02, name: 'Web development', tags: 'UI/UX'},
+  { title: 'Cool Mobile App', description: 'Tinder Clone in React Native', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about03, name: 'Web development', tags: ['UI/UX', ' Mobile App']},
 ];
 
 const Work = () => {
@@ -31,6 +31,7 @@ const Work = () => {
       if (item === 'All') {
         setFilterWork(works);
       } else {
+        // I WANT TO KEEP THEM ONLY IF THIS IS true work.tags.includes(item)
         setFilterWork(works.filter((work) => work.tags.includes(item)));        
       }
     }, 500);
@@ -39,10 +40,11 @@ const Work = () => {
   return (
     
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text" style={{marginTop: '30px'}}>Our <span>Portfolio</span> Section</h2>
+      <h2 className="head-text"><span>Contact us </span>to Start Building Your Solution</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['UI/UX', 'Websites', 'Mobile App', 'React JS', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -79,17 +81,6 @@ const Work = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.90] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    <AiFillGithub />
-                  </motion.div>
-                </a>
                 
               </motion.div>
 
@@ -100,7 +91,7 @@ const Work = () => {
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text">{work.tags}</p>
               </div>
             </div>
 

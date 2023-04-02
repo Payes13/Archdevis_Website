@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import { AiFillEye } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -8,7 +8,7 @@ import { images } from '../../constants'
 import './Work.scss';
 
 const works = [
-  { title: 'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', projectLink: "http://www.bakatattoo.com", codeLink: 'http://www.google.com', imgUrl: images.archWork, name: 'Web development', tags: ['Websites']},
+  { title: 'Modern UI/UX Website', description: 'A modern Website designed for a tattoo shop', projectLink: "http://www.bakatattoo.com", imgUrl: images.archWork, name: 'Web development', tags: ['Websites']},
   { title: 'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about04, name: 'Web development', tags: 'React JS'},
   { title: 'Cool Mobile App', description: 'Tinder Clone in React Native', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about02, name: 'Web development', tags: 'Mobile App'},
   { title: 'Cool Mobile App', description: 'Tinder Clone in React Native', projectLink: "http://www.stoneartmtl.com", codeLink: 'http://www.google.com', imgUrl: images.about03, name: 'Web development', tags: ['UI/UX', ' Mobile App']},

@@ -29,14 +29,15 @@ const Header = () => {
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
             <div style={{ marginLeft: 20 }}>
-              <h1 className="head-text">Archdevis</h1>
-              <p className="p-text">is a services-led, software-enabled, IT & Cloud Solutions provider, focused on delivering industry-leading solutions.</p>
+              <h1 className="head-text" style={{color: '#313bac'}}>ARCHDEVIS</h1>
+              <p className="p-text" style={{ fontSize: '15px'}}>is a services-led, software-enabled, IT & Cloud Solutions provider, focused on delivering industry-leading solutions.</p>
             </div>
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">We develop websites and more</p>
-            <p className="p-text">for you and your business</p>
+            <p className="p-text" style={{ fontSize: '20px'}}>We develop websites and more</p>
+            <p className="p-text">for you and your business.</p>
+            <p className="p-text">contact us to discover our solutions</p>
           </div>
         </div>
       </motion.div>

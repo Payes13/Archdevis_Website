@@ -23,8 +23,8 @@
       margin: 0.5rem;
   
       &:hover {
-        background-color: var(--secondary-color);
-        color: #fff;
+        background-color: var(--tertiary-color);
+        color: #000;
       }
   
       @media screen and (min-width: 2000px) {
@@ -34,8 +34,8 @@
     }
   
     .item-active {
-      background-color: var(--secondary-color);
-      color: #fff;
+      background-color: var(--tertiary-color);
+      color: #000;
     }
   }
   

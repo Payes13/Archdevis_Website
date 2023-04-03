@@ -74,7 +74,7 @@ const Services = () => {
           <div className='img-service-container'>
             <img src={images.archSolution} alt="Cloud Solutions" />
           </div>
-          
+
           <h2 className="bold-text" style={{ marginTop: 20, marginBottom: 10, textTransform: 'uppercase' }}>Cloud Solutions</h2>
           <ul className='app__navbar-links'>
             <li>Design, prototype, diagram and cloud development</li>
@@ -112,7 +112,7 @@ const Services = () => {
           <div className='img-service-container'>
             <img src={images.archDesktop} alt="Desktop development" />
           </div>
-          
+
           <h2 className="bold-text" style={{ marginTop: 20, marginBottom: 10, textTransform: 'uppercase' }}>Web development</h2>
           <ul className='app__navbar-links'>
             <li>DotNet applications</li>
@@ -129,4 +129,8 @@ const Services = () => {
 // about IS THE id
 // BEFORE EXPORTING THE About COMPONENT WE ARE GOING TO CALL THE AppWrap HOC
 // EL COMPONENTE QUE LE PASO A AppWrap ES MotionWrap
-export default AppWrap(MotionWrap(Services, 'app__services'), 'services', 'app__whitebg');
+export default AppWrap(
+  MotionWrap(Services, 'app__services'),
+  'services',
+  'app__primarybg'
+);

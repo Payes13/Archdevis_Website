@@ -39,7 +39,7 @@ const Contact = () => {
   return (
 
     <>
-      <h2 className="head-text">Take <span>a coffee</span> & chat with us</h2>
+      <h2 style={{ marginTop: '35px' }} className="head-text">Take <span>a coffee</span> & chat with us</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -56,15 +56,16 @@ const Contact = () => {
         <div className="app__footer-form app__flex">
           <div style={{ display: 'flex', flexDirection: 'row' }}>
             <div className="app__flex" style={{ marginRight: '10px' }}>
-              <input className="p-text" type="text" placeholder="Your Company Name" name="username" value={username} onChange={handleChangeInput} />
+              <input style={{ backgroundColor: 'white' }} className="p-text" type="text" placeholder="Your Company Name" name="username" value={username} onChange={handleChangeInput} />
             </div>
             <div className="app__flex">
-              <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+              <input style={{ backgroundColor: 'white' }} className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
             </div>
           </div>
           <div>
             <textarea
               className="p-text"
+              style={{ backgroundColor: 'white' }}
               placeholder="Your Message"
               value={message}
               name="message"
@@ -89,5 +90,5 @@ const Contact = () => {
 export default AppWrap(
   MotionWrap(Contact, 'app__contact'),
   'contact',
-  'app__whitebg',
+  'app__primarybg',
 );

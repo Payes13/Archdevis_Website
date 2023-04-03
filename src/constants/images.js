@@ -45,6 +45,7 @@ import archMobile from '../assets/ArchMobile.png';
 import archSolution from '../assets/ArchSolution.png';
 import archWeb from '../assets/ArchWeb.png';
 import archWork from '../assets/ArchWork.png';
+import archHelp from '../assets/ArchHelp.png';
 
 export default {
   email,
@@ -90,4 +91,5 @@ export default {
   archSolution,
   archWeb,
   archWork,
+  archHelp
 };

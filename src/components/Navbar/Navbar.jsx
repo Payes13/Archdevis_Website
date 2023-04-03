@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
 
       <ul className="app__navbar-links">
-        {['home', 'services', 'work', 'solutions', 'contact'].map((item) => (
+        {['home', 'solutions', 'services', 'work', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -39,7 +39,7 @@ const Navbar = () => {
             <HiX onClick={() => setToggle(false)} />
             
             <ul>
-              {['home', 'services', 'work', 'solutions', 'contact'].map((item) => (
+              {['home', 'solutions', 'services', 'work', 'contact'].map((item) => (
                 // HE DOESN'T ADD THE link- NEXT TO THE item SO HE CAN DIFFERENTIATE THEM FROM THE LINKS ABOVE
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>

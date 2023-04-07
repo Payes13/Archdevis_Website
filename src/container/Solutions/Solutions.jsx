@@ -22,7 +22,7 @@ const Solutions = () => {
   return (
 
     <>
-      <h2 className="head-text">Experience our <span>Solutions</span></h2>
+      <h2 className="head-text" style={{margin: '2rem'}}>Experience our <span>Solutions</span></h2>
 
       <div className="app__skills-container">
         <motion.div

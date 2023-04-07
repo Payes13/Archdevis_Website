@@ -2,27 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
-// import { urlFor, client } from '../../client';
 import { images } from '../../constants'
 import './Services.scss';
 
-// const about = [
-//   { title: 'Web development', description: "I am a good web developer", imgUrl: images.archWeb },
-//   { title: 'Full stack developer', description: "I am a good full stack developer", imgUrl: images.about02 },
-//   { title: 'MERN stack', description: "I am a good MERN stack developer", imgUrl: images.about03 },
-//   { title: 'SAP CPI Developer', description: "I am a good SAP CPI developer", imgUrl: images.about04 }
-// ];
-
 const Services = () => {
-  // const [about, setAbout] = useState([]);
-
-  // useEffect(() => {
-  //   const query = '*[_type == "about"]';
-
-  //   client.fetch(query).then((data) => {
-  //     setAbout(data);
-  //   });
-  // }, []);
 
   return (
 
@@ -30,20 +13,6 @@ const Services = () => {
       <h2 className="head-text" style={{ marginTop: '40px' }}>We Know that <span>Good Development</span> <br />means  <span>Good Business</span></h2>
 
       <div className="app__profiles">
-        {/* {about.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.2 }}
-            transition={{ duration: 0.5, type: 'tween' }}
-            className="app__profile-item"
-            key={about.title + index}
-          >
-            <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
-
-          </motion.div>
-        ))} */}
 
         <motion.div
           whileInView={{ opacity: 1 }}

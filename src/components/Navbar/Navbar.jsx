@@ -8,7 +8,20 @@ import './Navbar.scss';
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
+  console.log({ toggle });
+  
+  const handleClickTrue = () => {
+    console.log('true');
+    setToggle(true)
+    console.log('true2');
+  }
 
+  const handleClickFalse = () => {
+    console.log('false');
+    setToggle(false)
+    console.log('false2');
+  }
+ 
   return (
 
     <nav className="app__navbar">
@@ -29,20 +42,20 @@ const Navbar = () => {
       {/* THIS IS THE HAMBURGER MENU */}
       <div className="app__navbar-menu">
         {/* ESTAS SON LAS LINEAS BLANCAS DENTRO DEL CIRCULO AZUL */}
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <HiMenuAlt4 onClick={handleClickTrue} />
 
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: 'easeOut' }}
           >
-            <HiX onClick={() => setToggle(false)} />
-            
+            <HiX onClick={handleClickFalse} />
+
             <ul>
               {['home', 'solutions', 'services', 'work', 'contact'].map((item) => (
                 // HE DOESN'T ADD THE link- NEXT TO THE item SO HE CAN DIFFERENTIATE THEM FROM THE LINKS ABOVE
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  <a href={`#${item}`} onClick={handleClickFalse}>
                     {item}
                   </a>
                 </li>

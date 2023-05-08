@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08b81fed.css",
+    "main.js": "/static/js/main.de038289.js",
+    "static/media/ArchWork.png": "/static/media/ArchWork.07845bc2db3e791760eb.png",
+    "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
+    "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
+    "static/media/about01.png": "/static/media/about01.080509de05322b7aafda.png",
+    "static/media/bgIMG.png": "/static/media/bgIMG.c39101e520e2997fc6d4.png",
+    "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
+    "static/media/about03.png": "/static/media/about03.c26c2547bb1a423cf283.png",
+    "static/media/ArchHeader.png": "/static/media/ArchHeader.9175fa8b0951c3f2ba8c.png",
+    "static/media/ArchHelp.png": "/static/media/ArchHelp.78cf373100ff8524be0b.png",
+    "static/media/ArchLogo.png": "/static/media/ArchLogo.e861e26f9fe0baa2451e.png",
+    "static/media/ArchMarketing.png": "/static/media/ArchMarketing.281364afa5fa4771caf4.png",
+    "static/media/ArchWeb.png": "/static/media/ArchWeb.6b43ee7c655f205d7c60.png",
+    "static/media/ArchMobile.png": "/static/media/ArchMobile.6894d9fcc94574ab0d75.png",
+    "static/media/ArchLogo2.png": "/static/media/ArchLogo2.98a2ed387550b06dd9e1.png",
+    "static/media/ArchDesign.png": "/static/media/ArchDesign.9be7c47864a3382d3a9d.png",
+    "static/media/ArchSolution.png": "/static/media/ArchSolution.1c8d8882a862078ffa22.png",
+    "static/media/ArchDesktop.png": "/static/media/ArchDesktop.edd2adad1c5036fc1794.png",
+    "index.html": "/index.html",
+    "main.08b81fed.css.map": "/static/css/main.08b81fed.css.map",
+    "main.de038289.js.map": "/static/js/main.de038289.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08b81fed.css",
+    "static/js/main.de038289.js"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08b81fed.css",
-    "main.js": "/static/js/main.de038289.js",
+    "main.js": "/static/js/main.e31e9238.js",
     "static/media/ArchWork.png": "/static/media/ArchWork.07845bc2db3e791760eb.png",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
@@ -21,10 +21,10 @@
     "static/media/ArchDesktop.png": "/static/media/ArchDesktop.edd2adad1c5036fc1794.png",
     "index.html": "/index.html",
     "main.08b81fed.css.map": "/static/css/main.08b81fed.css.map",
-    "main.de038289.js.map": "/static/js/main.de038289.js.map"
+    "main.e31e9238.js.map": "/static/js/main.e31e9238.js.map"
   },
   "entrypoints": [
     "static/css/main.08b81fed.css",
-    "static/js/main.de038289.js"
+    "static/js/main.e31e9238.js"
   ]
 }

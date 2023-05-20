@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08b81fed.css",
-    "main.js": "/static/js/main.e31e9238.js",
+    "main.js": "/static/js/main.46800632.js",
     "static/media/ArchWork.png": "/static/media/ArchWork.07845bc2db3e791760eb.png",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
@@ -16,15 +16,17 @@
     "static/media/ArchWeb.png": "/static/media/ArchWeb.6b43ee7c655f205d7c60.png",
     "static/media/ArchMobile.png": "/static/media/ArchMobile.6894d9fcc94574ab0d75.png",
     "static/media/ArchLogo2.png": "/static/media/ArchLogo2.98a2ed387550b06dd9e1.png",
+    "static/media/mobile.png": "/static/media/mobile.145d9ce0157a56f8fcd8.png",
     "static/media/ArchDesign.png": "/static/media/ArchDesign.9be7c47864a3382d3a9d.png",
     "static/media/ArchSolution.png": "/static/media/ArchSolution.1c8d8882a862078ffa22.png",
+    "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
     "static/media/ArchDesktop.png": "/static/media/ArchDesktop.edd2adad1c5036fc1794.png",
     "index.html": "/index.html",
     "main.08b81fed.css.map": "/static/css/main.08b81fed.css.map",
-    "main.e31e9238.js.map": "/static/js/main.e31e9238.js.map"
+    "main.46800632.js.map": "/static/js/main.46800632.js.map"
   },
   "entrypoints": [
     "static/css/main.08b81fed.css",
-    "static/js/main.e31e9238.js"
+    "static/js/main.46800632.js"
   ]
 }

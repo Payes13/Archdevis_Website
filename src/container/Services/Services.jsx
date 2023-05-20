@@ -82,7 +82,7 @@ const Services = () => {
             <img src={images.archDesktop} alt="Desktop development" />
           </div>
 
-          <h2 className="bold-text" style={{ marginTop: 20, marginBottom: 10, textTransform: 'uppercase' }}>Web development</h2>
+          <h2 className="bold-text" style={{ marginTop: 20, marginBottom: 10, textTransform: 'uppercase' }}>Web Applications</h2>
           <ul className='app__navbar-links'>
             <li>DotNet applications</li>
             <li>Java applications</li>
